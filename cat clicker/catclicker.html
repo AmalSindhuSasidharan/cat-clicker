@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CAT CLICKER</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="script/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+ <div id="imagepart">
+ <img src="images/cat.jpg" alt="cat" id="catclick">
+  </div>
+  <div class="counter">
+
+      <h3 class="clicking"></h3>
+  </div>
+            <script type="text/javascript">
+
+            var clickno=0;
+          $("#catclick").click(function(){
+             clickno=clickno+1;
+                console.log(clickno);
+           $(".clicking").text("No: of times clicked = "+clickno);
+          });
+
+
+
+// trying vanilla js
+    //       var number=0;
+    //       var elem=document.getElementById("catclick");
+    //       elem.addEventListener("click",function(){
+    //             number=number+1;
+    //             console.log(number);
+    // document.getElementsByClassName("counter").innerHTML="No: of times clicked = "+number;
+    // // console.log( document.getElementsByClassName("counter"));
+    //       });
+
+      </script>
+</body>
+</html>
